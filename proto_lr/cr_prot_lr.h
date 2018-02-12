@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <linux/if_ether.h>
+#include <net/if_arp.h>
 #include <netinet/ip.h>
 #include <netinet/udp.h>
 #include <arpa/inet.h>
@@ -17,6 +18,13 @@
 
 /* Ethernet header creation */
 struct ethhdr *CreateEthLayer(u_char *dst, u_char *src, u_short prot);
+
+/* ARP header creation */
+#define ARP_HLEN 28
+
+struct arphdr *CreateARPLayer(u_short opcode, u_char *send_mac, u_char *rcv_mac,
+							  u_int send_ip, u_int rcv_ip);
+
 
 /* IP header creation */
 #define IP_HLEN 20
