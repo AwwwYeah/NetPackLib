@@ -1,3 +1,9 @@
+///////////////////////////////////////
+//Author: MLP994					 //
+//Email:  blackpower@horsefucker.org //
+//Date:   10.02.2018				 //
+///////////////////////////////////////
+
 #ifndef __CR_ARP_LR_H__
 #define __CR_ARP_LR_H__
 
